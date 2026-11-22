@@ -6,6 +6,14 @@ come back unasked. Where anything in THIS file conflicts with it, that file wins
 removals are newer); flag the conflict rather than quietly reinstating the feature.
 Book33 is a single-file mobile web app (index.html). It must always look clean,
 symmetrical, aligned and organized. Follow every rule, then re-check your work.
+## Private details stay out of this PUBLIC repo (2026-11-22, her words: "keep private info local and erase any public info")
+This repo and the page it serves are public. Her name, birthday, height, family and partner names, the partner's schedule,
+home-area venues, other people's names and contact details, her health, money arrangements and chart numbers live only in
+her own saved data or in Claude's local memory, never in `index.html`, a comment, a note, a mock or a commit message.
+Describe by role ("the partner", "family admin"). A value the app needs comes from her saved data, never a default typed
+here; with nothing saved the app shows a plain empty state. Before any push, run `.github/scripts/private-audit.sh`
+(the terms live in a local file outside every repo): exit 1 = stop and erase what it names. C22 work itself happens in
+`book33-app-redesign/`; the same scrub is built there (see its CLAUDE.md).
 ## design44 — the standing design system (Linh's own words, 2026-08-16)
 Book33's standing design system — the design requests Linh keeps making. When she says
 "design44" (e.g. "apply design44"), follow ALL rules below. Claude Code reads this on
